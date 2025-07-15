@@ -216,18 +216,11 @@ img {
 .home__blob {
   fill: var(--first-color);
 }
-.home__resume-btn {
-  margin-top: 1.5rem;
-  align-self: flex-start;
-  width: max-content;
-}
-
-@media screen and (min-width: 576px) {
-  .home__resume-btn {
-    align-self: flex-end;
-    margin-top: 0;
-    margin-left: 1rem;
-  }
+.home__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 
