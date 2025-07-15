@@ -193,25 +193,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </section>
 
-           <!--===== CONTACT =====-->
+<!--===== CONTACT =====-->
 <section class="contact section" id="contact">
   <h2 class="section-title">Contact</h2>
 
   <div class="contact__container bd-grid">
-    <form id="contact-form" class="contact__form" action="https://formsubmit.co/sahoorahul377@gmail.com" method="POST">
+    <form 
+      action="https://formsubmit.co/sahoorahul377@gmail.com" 
+      method="POST" 
+      class="contact__form" 
+      id="contact-form"
+    >
       <input type="text" name="name" placeholder="Name" class="contact__input" required>
       <input type="email" name="email" placeholder="Email" class="contact__input" required>
-      <textarea name="message" rows="10" placeholder="Your Message" class="contact__input" required></textarea>
-      
-      <!-- Hidden Inputs (Optional but Recommended) -->
+      <textarea name="message" rows="10" class="contact__input" placeholder="Message" required></textarea>
+
+      <!-- Optional: Redirect or turn off CAPTCHA -->
       <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="#contact">
+      <input type="hidden" name="_template" value="table">
 
       <input type="submit" value="Send" class="contact__button button">
-      <div id="form-message" style="margin-top: 1rem; font-weight: 600; color: green;"></div>
+
+      <!-- Success message -->
+      <p id="form-message" style="margin-top: 1rem; color: green;"></p>
     </form>
   </div>
 </section>
+
 
 
         <!--===== FOOTER =====-->
