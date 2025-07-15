@@ -193,20 +193,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </section>
 
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+           <!--===== CONTACT =====-->
+<section class="contact section" id="contact">
+  <h2 class="section-title">Contact</h2>
 
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-        </main>
+  <div class="contact__container bd-grid">
+    <form id="contact-form" class="contact__form" action="https://formsubmit.co/sahoorahul377@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Name" class="contact__input" required>
+      <input type="email" name="email" placeholder="Email" class="contact__input" required>
+      <textarea name="message" rows="10" placeholder="Your Message" class="contact__input" required></textarea>
+      
+      <!-- Hidden Inputs (Optional but Recommended) -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="#contact">
+
+      <input type="submit" value="Send" class="contact__button button">
+      <div id="form-message" style="margin-top: 1rem; font-weight: 600; color: green;"></div>
+    </form>
+  </div>
+</section>
+
 
         <!--===== FOOTER =====-->
         <footer class="footer">
