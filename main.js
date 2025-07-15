@@ -56,4 +56,8 @@ sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
 sr.reveal('.home__resume-btn', { delay: 700 });
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+  const message = document.getElementById("form-message");
+  message.innerText = "Thank you for contacting me!";
+});
 
