@@ -522,4 +522,15 @@ img{
             width: 450px;
         }
     }
+      &__resume-btn {
+    margin-top: 1.5rem;
+    align-self: flex-start;
+
+    @media screen and (min-width: 576px) {
+      align-self: flex-end;
+      margin-top: 0;
+      margin-left: 1rem;
+    }
+  }
+
 }
